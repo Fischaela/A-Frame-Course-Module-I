@@ -14,7 +14,10 @@
       </a-assets>
 
       <!-- Primitives. -->
-      <a-box position="0 1.6 -3" rotation="45 0 45" color="#4CC3D9"></a-box>
+       <a-box position="0 1.6 -3" color="#4CC3D9">
+         <a-animation attribute="rotation" from="45 0 45" to="45 360 45"
+  fill="forwards" dur="10000" repeat="indefinite" easing="linear"></a-animation>
+       </a-box>
       <a-plane position="0 .1 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
 
       <!-- Background sky. -->
